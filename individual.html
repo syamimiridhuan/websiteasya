@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nur Syamimi's Personal Website</title>
+    <style>  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FDF8F3; /* Soft background color for a brown aesthetic */
+    color: #5A3E2B; /* Dark brown text */
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+        /* Header Navigation */
+        .header {
+            width: 100%;
+            background-color: transparent;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header a {
+            color: black;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    color: #CAB3A4; /* Brown text color on hover */
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+        nav a:hover,
+        nav a.active {
+            color: #b74b4b;
+            border-bottom: 3px solid #b74b4b;
+        }
+
+        /* Section */
+        section {
+            padding: 200px 20px;
+            text-align: center;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* Hero Section Styling */
+.hero-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FAF3E0; /* Light cream background for sections */
+    margin-bottom: 20px; /* Spacing between sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8B5E3C; /* Warm brown color for headings */
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Open Sans, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Abril Fatface, sans-serif;
+  padding: 30px 0;
+  text-align: center;
+  font-size: clamp(35px, 5vw, 90px);
+}
+
+.content {
+  padding: 0 20vw;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.go-top-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 90px;
+  width: 90px;
+  background: #fff;
+  border: 3px solid #333;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-top-btn img {
+  width: 60px;
+  height: 60px;
+}
+
+/* About Me Section */
+
+#about-me {
+    background-color: #CAB3A4;
+}
+
+.hero-section {
+  background-color: #000000; /* Light cyan background for the entire section */
+  padding: 50px 0; /* Top and bottom padding */
+  text-align: center; /* Center the content */
+}
+
+.about-me-container {
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0  auto; /* Center the container */
+  padding: 20px;
+}
+
+.aboutme-item {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the content */
+  background-image: url(image/me-background.jpeg); /* White background for the item */
+  padding: 30px; /* Padding inside the item */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft black shadow */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.aboutme-item:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+.about-me-image {
+  width: 200px; /* Set a fixed width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 30px; /* Space between image and text */
+  border-radius: 8px; /* Rounded corners for the image */
+  transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.aboutme-item:hover .about-me-image {
+  transform: scale(1.1); /* Slightly scale the image on hover */
+}
+
+.text-container {
+  max-width: 600px; /* Limit the width of the text */
+  text-align: left; /* Align the text to the left */
+}
+
+h1 {
+  color: #00796b; /* Dark cyan color for the heading */
+  font-size: 36px; /* Large heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+  color: #f2f2f2; /* Darker cyan color for the paragraph text */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.learn-more {
+  display: inline-block; /* Make the link inline */
+  background-color: #00796b; /* Dark cyan background for the link */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the link */
+  font-size: 16px; /* Link font size */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.learn-more:hover {
+  background-color: #004d40; /* Darker cyan background on hover */
+}
+
+/* Experience Section */
+#experience{
+    background-image: url('experience-background.jpeg');
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 30px; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-bottom: 15px; /* Space between images and the caption */
+}
+
+.experience-item img {
+    width: 250px; /* Adjusted width */
+    height: 250px; /* Adjusted height */
+    border: 2px solid #000;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image fills its container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.experience-item img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.experience-caption {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.experience-item p {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.experience-item a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.explore-more {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.explore-more:hover {
+    color: #B77B51; /* Lighter brown on hover */
+}
+
+/* Education Section */
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-item {
+    text-align: center;
+    background-color: #F2E8DC;
+    border: 1px solid #D6C4B8;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+}
+
+.education-item img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px; /* Adds spacing between images */
+    justify-content: center; /* Optional: centers images */
+    align-items: center; /* Aligns images vertically */
+}
+
+/* Family Section */
+.family-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent, .children {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #B77B51;
+    margin-bottom: 10px;
+}
+
+.member span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5A3E2B;
+}
+
+.horizontal-line {
+    width: 80%;
+    height: 2px;
+    background-color: #B77B51;
+    margin: 10px 0;
+}
+
+.see-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B77B51;
+    color: #f2f2f2;
+    text-decoration: underline;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.see-more:hover {
+    background-color: #8B5E3C;
+}
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #D6C4B8;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #000000;
+}
+
+@media (max-width: 768px) {
+    .education-container,
+    .family-tree .parent,
+    .family-tree .children,
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+  /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #transparent; /* Light beige */
+            color: #5A3E2B; /* Dark brown */
+        }
+
+   /* Homepage Section */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Ensure it spans the entire width */
+    margin: 0; /* Remove extra margins */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in total width/height */
+    background-image: url('profile-background.jpeg'); /* Add your background image */
+    background-repeat: no-repeat; /* Prevent the image from tiling */
+    background-size: cover; /* Make the image cover the entire section */
+    background-position: center; /* Center the image */
+}
+
+/* Left Content Styling */
+.content {
+    max-width: 600px; /* Limit width */
+    text-align: center; /* Center align text */
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 3rem; /* Larger for hero heading */
+    margin-bottom: 10px;
+    color: #5A3E2B;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #5A3E2B;
+}
+
+/* Button Styling */
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #B08A6C; /* Warm brown */
+    color: #F2E8CF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #8E6E52; /* Darker brown */
+}
+/* Circular Image Styling with Hover Effect */
+.image-container {
+    width: 500px; /* Fixed circle size */
+    height: 500px;
+    position: relative;
+    margin: 0 auto; /* Center the image */
+    overflow: hidden; /* Ensures clean circular edges */
+    border-radius: 50%; /* Makes it perfectly circular */
+    box-shadow: 0 4px 6px rgba(139, 69, 19, 0.2); /* Light brown shadow */
+    transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border-radius: 50%; /* Ensures the image stays circular */
+    transition: transform 0.4s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(139, 69, 19, 0.4); /* Deeper brown shadow on hover */
+    box-shadow: 0 0 20px #f4f4f4;
+}
+
+.learn-more {
+    background-color:#f2f2f2;
+    color:#8B5E3C ;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+       /* Hero Section - Background Image Full Page */
+#hero-section {
+    background-image: url('image.jpeg');
+    background-size: cover; /* Ensure the image covers the whole area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    height: 100vh; /* Full page height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; /* White text for contrast */
+    text-align: center;
+}
+
+/* General Section Styling */
+section {
+    height: 100vh; /* Each section occupies full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Allows border placement */
+}
+
+/* Define the bottom line (gap between sections) */
+section::after {
+    position: absolute;
+    bottom: 0; /* Place at the bottom of each section */
+    left: 0;
+    width: 100%;
+    height: 0px; /* Thickness of the line */
+    background-color: #B77B51; /* Line color - Warm Brown */
+}
+
+/* Section Colors */
+#experience {
+    background-color: rgba(250, 243, 224, 0.9); /* Slight transparency */
+}
+
+#education {
+    background-color: rgba(202, 179, 164, 0.9);
+}
+
+#family {
+    background-color: rgba(250, 243, 224, 0.9);
+}
+
+#gallery {
+    background-color: rgba(202, 179, 164, 0.9);
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    section {
+        height: auto; /* Adjust for smaller screens */
+        padding: 50px 20px;
+    }
+
+    #hero-section {
+        height: auto;
+    }
+}
+
+        .hero-section {
+            
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section .cta-button {
+            background: #F4C430;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+/* Education Section */
+#education {
+    background-image:url('image/me-background.jpeg');
+}
+.education-section {
+    background-color: #000000;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.education-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.education-container img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; 
+}
+
+.education-item img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    object-fit: cover; /* Ensures the image fits perfectly within the defined dimensions */
+}
+
+.education-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color:black;
+}
+  h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color:black;
+}
+
+/* Family Tree Container */
+#family-tree {
+    background-image: url('profile-background.jpeg');
+}
+
+.family-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* Parent Section */
+.parent {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+/* Children Section */
+.children {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+
+/* Image Container Styling */
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px; /* Slight rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member span {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ /* Family Section Styles */
+
+ #family-tree
+
+    .hero-section {
+        text-align: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .family-table {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    th, td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        font-size: 1em;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    td img {
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+        transition: 0.3s;
+    }
+
+
+/* Gallery Section */
+#gallery {
+    background-image:url('image/.jpeg');
+    text-align: center;
+    padding:100px 20px;
+
+}
+.gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+.gallery img:hover,
+        {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff6cf3;
+}
+      /* Contact Form Section */
+#form-section {
+    background-image: url('image/-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0; /* Added more vertical padding */
+}
+
+.form-section {
+    background: #white;
+    padding: 15px 20px; /* Balanced padding */
+    max-width: 500px; /* Compact width */
+    margin: 0 auto 30px; /* Added margin-bottom to avoid footer overlap */
+    border-radius: 12px; /* Larger rounded corners */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.form-section h2 {
+    font-size: 2em; 
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.form-section label {
+    font-size: 0.75rem; 
+    color: #555;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    margin: 5px 0; /* Reduced spacing */
+    padding: 6px; 
+    font-size: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Rounded corners for inputs */
+}
+
+.form-section textarea {
+    resize: none; 
+    height: 40px; /* Controlled height */
+}
+
+.form-section button {
+    padding: 6px 10px; 
+    font-size: 0.75rem; 
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.form-section button:hover {
+    background: #555;
+}
+
+/* Specific Section Height */
+#form-section {
+    height: 50vh; /* This section will take up 50% of the viewport height */
+    min-height: 300px; /* Ensures it doesn’t get too small on smaller screens */
+    padding: 20px 0; /* Add padding to keep content spaced */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+    .form-section {
+        max-width: 90%; /* Ensure it fits small screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .form-section h2 {
+        font-size: 1.2rem; /* Further reduce heading size */
+    }
+
+    .form-section input,
+    .form-section textarea {
+        font-size: 0.7rem; /* Adjust input text size */
+        padding: 5px;
+    }
+
+    .form-section button {
+        font-size: 0.7rem;
+        padding: 10px 5px;
+    }
+}
+
+/* Modal (Pop-up) styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+        /* Footer */
+        .footer {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    display: wrap;
+}
+
+.social-icons img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.8);
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <div class="header">
+        <a href="#about-me">ABOUT ME</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#family">FAMILY</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#form">CONTACT ME</a>
+    </div>
+
+     <div class="container">
+        <!-- Left Content -->
+        <div class="content">
+            <h1>WELCOME TO MY WEBSITE</h1>
+            <h2>Get To Know Me</h2>
+            <p>Hi, I'm Nur Syamimi. Let’s discover more about me and connect through my website, where you can explore who I am and my experiences.</p>
+            <audio controls autoplay>
+<source src="song-home.mpeg" type="audio/mpeg">
+</audio>
+        </div>
+
+ <!-- Right Image with Overlay -->
+        <div class="image-container">
+            <img src="image/profile.jpeg" alt="Profile Image">
+        </div>
+    </div>
+
+<button class="go-top-btn">
+      <img src="image/arrow-up.jpg" alt="arrow up">
+    </button>
+
+<!-- About Me Section -->
+<section id="about-me" class="hero-section">
+  <div class="about-me-container">
+    <div class="aboutme-item">
+      <img src="image/me.jpeg" alt="About Me Image" class="about-me-image">
+      <div class="text-container">
+        <h1>About Me</h1>
+        <p>This is a short description about who I am.</p>
+        <a href="about-me.html" class="learn-more">Click Here</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="hero-section">
+    <h1>Experience</h1>
+    <div class="experience-container">
+        <div class="experience-item">
+            <img src="image/office.jpg" alt="Pejabat Daerah Kemaman Office">
+        </div>
+        <div class="experience-item">
+            <img src="image/office2.jpeg" alt="Pejabat Daerah Kemaman Entrance">
+        </div>
+    </div>
+    <p class="experience-caption">Internship at Pejabat Daerah Kemaman</p>
+     <a href="experience.html" class="explore-more">Explore More</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Education Section -->
+    <section id="education" class="hero-section">
+    <h1>Education</h1>
+    <div class="education-container">
+        <div class="education-item">
+            <img src="image/school1.jpg" alt="SK Bukit Mentok" width="200" height="200">
+            <p>2011-2016</p>
+            <p>SK Bukit Mentok</p>
+        </div>
+        <div class="education-item">
+            <img src="image/school2.jpeg" alt="SMK Bukit Mentok" width="200" height="200">
+            <p>2017-2022</p>
+            <p>SMK Bukit Mentok</p>
+        </div>
+        <div class="education-item">
+            <img src="image/school3.jpeg" alt="UiTM, Machang, Kelantan" width="200" height="200">
+            <p>2022-2025</p>
+            <p>UiTM Machang, Kelantan</p>
+        </div>
+    </div>
+</section>
+
+<!-- Family Section -->
+<section id="family" class="hero-section">
+     <h1>Family</h1>
+ <div class="family-tree">
+        <!-- Parent Section -->
+        <div class="parent">
+            <div class="member">
+                <img src="image/father.jpeg" alt="Father">
+                <span>Father</span>
+            </div>
+            <div class="member">
+                <img src="image/mother.jpeg" alt="Mother">
+                <span>Mother</span>
+            </div>
+        </div>
+
+        <!-- Children Section -->
+        <div class="children">
+            <div class="horizontal-line"></div>
+            <div class="member">
+                <img src="image/myself.jpeg" alt="Me">
+                <span>Me</span>
+            </div>
+            <div class="member">
+                <img src="image/aireen.jpeg" alt="Sister">
+                <span>Sister</span>
+            </div>
+            <div class="member">
+                <img src="image/mia.jpeg" alt="Sister">
+                <span>Sister</span>
+            </div>
+        </div>
+          <a href="family.html" class="see-more">See More</a>
+</section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="hero-section">
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img src="image/asya1.jpeg" alt="me">
+        <img src="image/asya2.jpeg" alt="friend">
+        <img src="image/asya3.jpeg" alt="friend1">
+        <img src="image/asya4.jpeg" alt="friend2">
+        <img src="image/asya5.jpeg" alt="friend3">
+    </div>
+    <a href="gallery.html" class="see-more">See More</a>
+</section>
+
+    <!-- Contact Form Section -->
+<section id="form" class="form-section">
+    <h2>Contact Me</h2>
+    <form onsubmit="showModal(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- The Modal -->
+<div id="thank-you-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Thank you for your submission! I’ve received your message and will get back to you soon.</p>
+    </div>
+</div>
+
+<script>
+
+    const goTopBtn = document.querySelector('.go-top-btn');
+
+window.addEventListener('scroll', checkHeight)
+
+function checkHeight(){
+  if(window.scrollY > 200) {
+    goTopBtn.style.display = "flex"
+  } else {
+    goTopBtn.style.display = "none"
+  }
+}
+
+goTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
+
+</script>
+<script>
+    // Function to show the modal
+    function showModal(event) {
+        event.preventDefault(); // Prevents the form from actually submitting
+        document.getElementById('thank-you-modal').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        document.getElementById('thank-you-modal').style.display = 'none';
+    }
+
+    // Close the modal if clicked outside the modal content
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('thank-you-modal')) {
+            closeModal();
+        }
+    }
+</script>
+
+  <!-- Footer -->
+<div class="footer">
+    <p>&copy; 2024 Nur Syamimi. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.tiktok.com/@hwneystar?_t=ZS-8s9ctVHuOYx&_r=1" target="_blank">
+            <img src="icons/tiktok.jpeg" alt="Tiktok" width="30">
+        </a>
+        <a href="https://www.instagram.com/hwneystar/profilecard/?igsh=NzAwZnc2ZGJ6d3Rv" target="_blank">
+            <img src="icons/ig.jpeg" alt="Instagram" width="35">
+        </a>
+        <a href="https://wa.me/60179282805/" target="_blank">
+            <img src="icons/ws.jpeg" alt="Whatsaap" width="30">
+        </a>
+    </div>
+</div>
+</body>
+</html>
+
+       

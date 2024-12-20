@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Family</title>
+    <style>
+    /* General Body Styles */
+    body {
+        font-family: Arial, sans-serif; /* Use Arial font with fallback */
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+.header {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent; /* Remove background */
+    position: sticky; /* Keep it sticky at the top */
+    top: 0;
+    left: 0;
+    width: 100px; /* Fixed width */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    font-size: 22px;
+    height: auto; /* Adjust height to content */
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #6c3a1f, #9c6747); /* Gradient background */
+    text-align: center;
+    width: 80%; /* Make the links width 80% of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for links */
+}
+
+.header a:hover {
+    background: linear-gradient(135deg, #fcf19a, #ffbf77); /* Hover background change */
+    color: #6c3a1f;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+    /* Family Section Styles */
+    .hero-section {
+        text-align: center;
+        padding: 20px;
+        background-image: url('background-image.jpeg');
+        background-size: cover; /* Ensures image covers the area */
+        background-position: center;
+        color: #333;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 70%;
+        height: 40%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0 auto; /* Center the table */
+    }
+
+    th, td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        font-size: 1em;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    td img {
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    td img {
+    border-radius: 50%; /* Makes images circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    width: 100px; /* Sets a uniform width */
+    height: 100px; /* Sets a uniform height */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fit inside */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+td img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+
+    /* Zebra Stripe Effect */
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Hover Effect */
+    tr:hover {
+        background-color: #F0E1D7; 
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    </style>
+</head>
+<body>
+
+     <div class="header">
+        <a href="individual.html">BACK</a>
+    </div>
+</body>
+
+<section class="hero-section">
+    <h1>Family</h1>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Relationship</th>
+                <th>Age</th>
+                <th>Occupation</th>
+                <th>Photo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Muhammad Ridhuan bin Abdul Razak</td>
+                <td>Father</td>
+                <td>50</td>
+                <td>Businessman</td>
+                <td><img src="image/father.jpeg" alt="Father"></td>
+            </tr>
+            <tr>
+                <td>Azura binti Abdullah</td>
+                <td>Mother</td>
+                <td>48</td>
+                <td>Housewife</td>
+                <td><img src="image/mother.jpeg" alt="Mother"></td>
+            </tr>
+            <tr>
+                <td>Nur Syamimi binti Muhammad Ridhuan</td>
+                <td>Myself</td>
+                <td>20</td>
+                <td>Student</td>
+                <td><img src="image/myself.jpeg" alt="Myself"></td>
+            </tr>
+            <tr>
+                <td>Nur Aireen Batrisyia binti Muhammad Ridhuan</td>
+                <td>Sister</td>
+                <td>15</td>
+                <td>High School Student</td>
+                <td><img src="image/aireen.jpeg" alt="Sister"></td>
+            </tr>
+            <tr>
+                <td>Nur Damia Irdina binti Muhammad Ridhuan</td>
+                <td>Sister</td>
+                <td>9</td>
+                <td>Elementary School Student</td>
+                <td><img src="image/mia.jpeg" alt="Sister"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
+ 

@@ -1,0 +1,255 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #transparent; /* Light beige */
+            color: #5A3E2B; /* Dark brown for text */
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+    .header {
+    display: center; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent; /* Remove background */
+    position: sticky; /* Keep it sticky at the top */
+    top: 0;
+    left: 0;
+    width: 250px; /* Fixed width */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    font-size: 22px;
+    height: auto; /* Adjust height to content */
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #6c3a1f, #9c6747); /* Gradient background */
+    text-align: center;
+    width: 80%; /* Make the links width 80% of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for links */
+}
+
+.header a:hover {
+    background: linear-gradient(135deg, #fcf19a, #ffbf77); /* Hover background change */
+    color: #6c3a1f;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+        h1 {
+            background-color: #transparent; /* Light brown */
+            color: #5A3E2B; /* Dark brown */
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #B08A6C; /* Warm brown */
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #F2E7D5; /* Beige text */
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .experience_section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 20px;
+            background-color: #E4D1C0; /* Soft beige */
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience_section:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section_title {
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #5A3E2B; /* Brown */
+        }
+
+        .content {
+            flex: 1;
+            max-width: 60%;
+            color: #5A3E2B; /* Dark brown text */
+        }
+
+        .custom_marker_list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .custom_marker_list li {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 25px;
+        }
+
+        .custom_marker_list li::before {
+            content: "\2022";
+            color: #8E6E52; /* Brown marker */
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        .img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(142, 110, 82, 0.6); /* Soft brown glow */
+        }
+
+        footer {
+            background-color: #B08A6C; /* Warm brown */
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            color: #F2E7D5; /* Light beige */
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #F2E7D5;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        body {
+  background-image: url('background-image.jpeg');
+}
+    </style>
+</head>
+<body>
+
+     <div class="header">
+        <a href="individual.html">BACK</a>
+    </div>
+</body>
+
+    <h1>EXPERIENCE</h1>
+
+    <nav>
+        <a href="#key-in-data">Key In Data</a>
+        <a href="#managing-files">Managing Files</a>
+        <a href="#customer-services">Customer Services</a>
+        <a href="#national-day-parade">National Day Parade</a>
+    </nav>
+
+    <!-- Key In Data Section -->
+    <div class="experience_section" id="key-in-data">
+        <div class="content">
+            <div class="section_title">KEY IN DATA</div>
+            <ul class="custom_marker_list">
+                <li><strong></strong></li>
+                <li><strong>Enter over 500 files for "Application for the Destruction of Financial and Accounting Records" form in Microsoft Word.</strong></li>
+                <li><strong>Key in coordinate numbers in Excel for tracking and organization.</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="image/intern1.jpeg" alt="intern" class="img">
+            <img src="image/intern2.jpeg" alt="intern" class="img">
+        </div>
+    </div>
+
+    <!-- Site Visit Section -->
+    <div class="experience_section" id="managing-files">
+        <div class="content">
+            <div class="section_title">MANAGING FILES</div>
+            <ul class="custom_marker_list">
+                <li><strong>Organized and maintained files for improved accessibility.</strong></li>
+                <li><strong>Classified and archived documents using systematic filing methods.</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="image/intern3.jpeg" alt="site" class="img">
+            <img src="image/intern4.jpeg" alt="site" class="img">
+        </div>
+    </div>
+
+    <!-- Customer Services Section -->
+    <div class="experience_section" id="customer-services">
+        <div class="content">
+            <div class="section_title">CUSTOMER SERVICES</div>
+            <ul class="custom_marker_list">
+                <li><strong>Contacted clients via WhatsApp, ensuring that each client received the latest update on the quantity display (BQ). </strong></li>
+                <li><strong>Successfully reached out to a total of 20 clients.</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="image/intern5.jpeg" alt="customer" class="img">
+            <img src="image/intern6.jpeg" alt="customer" class="img">
+
+        </div>
+    </div>
+
+    <!-- National Day Parade Section -->
+    <div class="experience_section" id="national-day-parade">
+        <div class="content">
+            <div class="section_title">NATIONAL DAY PARADE</div>
+            <ul class="custom_marker_list">
+                <li><strong>Participated in the National Day Parade representing the organization.</strong></li>
+                <li><strong>We dressed in traditional Malay attire, with women in Baju Kurung and men in Baju Melayu, proudly showcasing our cultural heritage.</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="image/intern7.jpeg" alt="parade" class="img">
+            <img src="image/intern8.jpeg" alt="parade" class="img">
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 | Designed by Nur Syamimi
+    </footer>
+</body>
+</html>

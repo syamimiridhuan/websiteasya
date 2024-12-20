@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background-image.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .header {
+    display: inline-flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent; /* Remove background */
+    position: sticky; /* Keep it sticky at the top */
+    top: 0;
+    left: 0;
+    width: 100px; /* Fixed width */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    font-size: 22px;
+    height: auto; /* Adjust height to content */
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #6c3a1f, #9c6747); /* Gradient background */
+    text-align: center;
+    width: 250%; /* Make the links width 80% of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for links */
+}
+
+.header a:hover {
+    background: linear-gradient(135deg, #fcf19a, #ffbf77); /* Hover background change */
+    color: #6c3a1f;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+        header {
+            background-color: transparent;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+        }
+        .gallery {
+            max-width: 1200px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+        .gallery h1 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .filter-btns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+        .filter-btns button {
+            border: none;
+            background-color: transparent;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .filter-btns button.active,
+        .filter-btns button:hover {
+            background-color: transparent;
+            color: black;
+        }
+
+        .gallery-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            display: none; /* Default state: hidden */
+        }
+        .gallery-item img,
+        .gallery-item video {
+            width: 200px;      /* Fixed width */
+            height: auto;      /* Auto height to maintain aspect ratio */
+            object-fit: center; /* Ensures images and videos are not distorted */
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item.active {
+            display: block; /* Show active items */
+        }
+
+        /* Hover effects for images and videos */
+        .gallery-item img:hover,
+        .gallery-item video:hover {
+            transform: scale(1.5); /* Slight zoom effect */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+         
+
+    </style>
+</head>
+<body>
+
+     <div class="header">
+        <a href="individual.html">BACK</a>
+    </div>
+</body>
+
+    <header>
+        <h1>Image & Video Gallery</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="family">Family</button>
+            <button class="filter-btn" data-filter="friends">Friends</button>
+            <button class="filter-btn" data-filter="places">Visit Places</button>
+        </div>
+
+        <div class="gallery-items">
+            <!-- Family -->
+            <div class="gallery-item family active">
+                <video autoplay muted>
+                    <source src="contoh-video-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Friends -->
+            <div class="gallery-item friends active">
+                <img src="image/friend1.jpeg" alt="Friends">
+            </div>
+            <div class="gallery-item friends active">
+                <img src="image/friend2.jpeg" alt="Friends">
+            </div>
+            <div class="gallery-item friends active">
+                <img src="image/friend3.jpeg" alt="Friends">
+            </div>
+            <div class="gallery-item friends active">
+                <img src="image/friend4.jpeg" alt="Friends">
+            </div>
+            <div class="gallery-item friends active">
+                <img src="image/friend5.jpeg" alt="Friends">
+            </div>
+            <div class="gallery-item friends active">
+                <img src="image/friend6.jpeg" alt="Friends">
+            </div>
+            <div class="gallery-item friends active">
+                <img src="image/friend7.jpeg" alt="Friends">
+            </div>
+            <div class="gallery-item friends active">
+                <img src="image/friend8.jpeg" alt="Friends">
+            </div>
+
+            <!-- Visit Places -->
+            <div class="gallery-item places active">
+                <img src="image/place1.jpeg" alt="Visit Places">
+            </div>
+            <div class="gallery-item places active">
+                <img src="image/place2.jpeg" alt="Visit Places">
+            </div>
+            <div class="gallery-item places active">
+                <img src="image/place3.jpeg" alt="Visit Places">
+            </div>
+            <div class="gallery-item places active">
+                <img src="image/place4.jpeg" alt="Visit Places">
+            </div>
+            <div class="gallery-item places active">
+                <img src="image/place5.jpeg" alt="Visit Places">
+            </div>
+            <div class="gallery-item places active">
+                <img src="image/place6.jpeg" alt="Visit Places">
+            </div>
+            <div class="gallery-item places active">
+                <img src="image/place7.jpeg" alt="Visit Places">
+            </div>
+            <div class="gallery-item places active">
+                <img src="image/place8.jpeg" alt="Visit Places">
+            </div>
+
+     <audio controls>
+    <source src="song-gallery.mpeg" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+
+  
+</body>
+</html>

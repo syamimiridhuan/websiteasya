@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .box {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .box span {
+            display: block;
+            font-weight: bold;
+            color: #000000; /* Change to your desired color */
+            margin-bottom: 5px;
+        }
+
+        .profile-picture {
+            width: 200px; /* Adjust size as needed */
+            height: 200px; /* Match width for a circular shape */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image scales well */
+            display: block; /* Centers the image in the container */
+            margin: 0 auto 20px; /* Centers and adds spacing below the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow effect */
+        }
+
+       .header {
+    display: table-footer-group; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent; /* Remove background */
+    position: sticky; /* Keep it sticky at the top */
+    top: 0;
+    left: 0;
+    width: 250px; /* Fixed width */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    font-size: 22px;
+    height: auto; /* Adjust height to content */
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #6c3a1f, #9c6747); /* Gradient background */
+    text-align: center;
+    width: 80%; /* Make the links width 80% of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for links */
+}
+
+.header a:hover {
+    background: linear-gradient(135deg, #fcf19a, #ffbf77); /* Hover background change */
+    color: #6c3a1f;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+        body {
+            background-image: url('background-image.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<body>
+
+    <div class="header">
+        <a href="individual.html">BACK</a>
+    </div>
+</body>
+
+    <div class="container">
+        <img src="image/asya.jpeg" alt="Profile Picture" class="profile-picture">
+
+	<audio controls>
+    <source src="song-about.mpeg" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+        <h1>About Me</h1>
+        <div class="info">
+            <div class="box">
+                <span>Name</span>
+                Nur Syamimi
+            </div>
+            <div class="box">
+                <span>Birth Date</span>
+                16 March 2004
+            </div>
+            <div class="box">
+                <span>Phone Number</span>
+                0179282805
+            </div>
+            <div class="box">
+                <span>Address</span>
+                1422 Kg Bukit Mentok 24000 Kemaman, Terengganu
+            </div>
+            <div class="box">
+                <span>Diploma</span>
+                Information Management
+            </div>
+            <div class="box">
+                <span>Email</span>
+                syamimiridhuan@gmail.com
+            </div>
+        </div>
+    </div>
+</body>
+</html>
